@@ -21,6 +21,8 @@
 		5B468D8C2AB0EDA400A87CE0 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B468D8B2AB0EDA400A87CE0 /* BackgroundImageView.swift */; };
 		5B468D8E2AB0F05300A87CE0 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B468D8D2AB0F05300A87CE0 /* NewTaskItemView.swift */; };
 		5B468D902AB0F6AE00A87CE0 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B468D8F2AB0F6AE00A87CE0 /* BlankView.swift */; };
+		5B468D942AB1078300A87CE0 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B468D932AB1078300A87CE0 /* ListRowItemView.swift */; };
+		5B468D962AB10A2600A87CE0 /* ChechBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B468D952AB10A2600A87CE0 /* ChechBoxStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		5B468D8B2AB0EDA400A87CE0 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		5B468D8D2AB0F05300A87CE0 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 		5B468D8F2AB0F6AE00A87CE0 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		5B468D932AB1078300A87CE0 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		5B468D952AB10A2600A87CE0 /* ChechBoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChechBoxStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		5B468D7E2AB0851200A87CE0 /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				5B468D952AB10A2600A87CE0 /* ChechBoxStyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				5B468D8B2AB0EDA400A87CE0 /* BackgroundImageView.swift */,
 				5B468D8D2AB0F05300A87CE0 /* NewTaskItemView.swift */,
 				5B468D8F2AB0F6AE00A87CE0 /* BlankView.swift */,
+				5B468D932AB1078300A87CE0 /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,11 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B468D6B2AB0834300A87CE0 /* Persistence.swift in Sources */,
+				5B468D962AB10A2600A87CE0 /* ChechBoxStyle.swift in Sources */,
 				5B468D8C2AB0EDA400A87CE0 /* BackgroundImageView.swift in Sources */,
 				5B468D642AB0834200A87CE0 /* ContentView.swift in Sources */,
 				5B468D8A2AB0E63500A87CE0 /* HideKeyboardExtension.swift in Sources */,
 				5B468D902AB0F6AE00A87CE0 /* BlankView.swift in Sources */,
 				5B468D882AB0A08E00A87CE0 /* Constant.swift in Sources */,
+				5B468D942AB1078300A87CE0 /* ListRowItemView.swift in Sources */,
 				5B468D6E2AB0834300A87CE0 /* Devote.xcdatamodeld in Sources */,
 				5B468D622AB0834200A87CE0 /* DevoteApp.swift in Sources */,
 				5B468D8E2AB0F05300A87CE0 /* NewTaskItemView.swift in Sources */,
