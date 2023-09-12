@@ -31,7 +31,7 @@ struct ContentView: View {
             ZStack {
                 //    MARK: - MAIN VIEW
 
-               
+                
                 
                 
                 VStack {
@@ -55,6 +55,7 @@ struct ContentView: View {
                         Button {
                             // TOOGLE APPERANCE
                             isDarkMode.toggle()
+                            playSound(sound: "sound-tap", type: "mp3")
                             
                         } label: {
                             Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
@@ -73,6 +74,7 @@ struct ContentView: View {
                     //    MARK: -  NEW TASK BUTTON
                     
                     Button {
+                        playSound(sound: "sound-ding", type: "mp3")
                         showNewTaskItem = true
                         
                     } label: {
@@ -123,8 +125,11 @@ struct ContentView: View {
                 .navigationTitle("Daily Tasks")
                 .navigationBarTitleDisplayMode(.large)
                 .navigationBarHidden(true)
-                .background(BackgroundImageView())
-               
+                .background(
+                  BackgroundImageView()
+                    .blur(radius: showNewTaskItem ? 8.0 : 0, opaque: false)
+                )
+                .background(backgroundGradient.ignoresSafeArea())
                 .background(
                   backgroundGradient.ignoresSafeArea(.all)
                 )

@@ -53,6 +53,7 @@ struct NewTaskItemView: View {
                     .cornerRadius(10)
                 Button {
                     addItem()
+                    playSound(sound: "sound-ding", type: "mp3")
                 } label: {
                     Spacer()
                     Text("save".uppercased())
