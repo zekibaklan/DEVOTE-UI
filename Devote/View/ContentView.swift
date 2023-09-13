@@ -98,13 +98,27 @@ struct ContentView: View {
                            ListRowItemView(item: item)
                         }
                         .onDelete(perform: deleteItems)
+                        
+                        
+                        
+                        
+                        
                     }//:LIST
-                    .listStyle(InsetGroupedListStyle())
-                    .shadow(color: Color( red: 0, green: 0, blue: 0, opacity: 0.3), radius: 12)
-                    .padding(.vertical,0)
+                    
+                    
+                    .cornerRadius(20) // 1.
+                    .listStyle(.inset) // 2.
+                    .padding(20) // 3.
+                    // .scrollContentBackground(Color.red) // iOS 16
+                    // .scrollContentBackground(Color.clear) // iOS 16
+                    // .scrollContentBackground(.hidden) // iOS 16
+                    .shadow(color: .black.opacity(0.3), radius: 12)
+                    .padding(.vertical, 0)
                     .frame(maxWidth: 640)
                 }//:VSTACK
-               
+                .blur(radius: showNewTaskItem ? 8.0 : 0, opaque: false)
+                .animation(.easeOut(duration: 0.5))
+                .transition(.move(edge: .bottom))
                 //   MARK: - NEW TASK ITEM
                 if showNewTaskItem {
                     BlankView()
@@ -133,19 +147,14 @@ struct ContentView: View {
                 .background(
                   backgroundGradient.ignoresSafeArea(.all)
                 )
-            
-            
-                .navigationViewStyle(StackNavigationViewStyle())
-            
-                   
-            
+    
             .onAppear() {
                 UITableView.appearance().backgroundColor = UIColor.clear
             }
 
            
             Text("Select an item")
-        }
+        } //: NAVIGATION
         .navigationViewStyle(StackNavigationViewStyle())
         
     }
@@ -165,7 +174,7 @@ struct ContentView: View {
         }
     }
         
-}
+}//:CONTENT VIEW
 
 
 
